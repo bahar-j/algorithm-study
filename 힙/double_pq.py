@@ -1,3 +1,5 @@
+# https://programmers.co.kr/learn/courses/30/lessons/42628
+
 import heapq
 
 def solution(operations):

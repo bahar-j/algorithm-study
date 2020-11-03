@@ -1,3 +1,5 @@
+// https://programmers.co.kr/learn/courses/30/lessons/42840
+
 function solution(answers) {
     var answer = [];
     var student1 = [1,2,3,4,5];

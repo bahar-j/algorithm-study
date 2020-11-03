@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1697
+
 import sys
 from collections import deque
 from collections import defaultdict

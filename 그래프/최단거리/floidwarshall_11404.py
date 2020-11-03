@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/11404
+
 from sys import stdin
 
 N = int(stdin.readline().strip())

@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1932
 
 LINE = int(input())
 triangle = []

@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1463
 
 def make_one(num, answer):
     tmp_answer = []

@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1931
+
 from sys import stdin
 
 num_meeting = int(stdin.readline())
