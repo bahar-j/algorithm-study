@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/4963
-# 재귀 스택 터짐... !
+# DFS는 재귀 호출 스택 터짐
 
 import sys
 

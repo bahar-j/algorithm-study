@@ -15,7 +15,7 @@ D = [[0] * (column) for _ in range(row)]
 queue.append((0, 0))
 visited.append((0, 0))
 
-while( len(queue) != 0 ):
+while queue:
     x, y = queue[0]
 
     if ( y+1 < column ):
