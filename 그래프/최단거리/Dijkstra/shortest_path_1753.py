@@ -12,16 +12,16 @@ for _ in range(E):
     G[u].append([v, w])
 
 
-dist = [float('inf')] * (V+1)  # 주어진 정점으로부터의 거리
+dist = [float('inf')] * (V+1)  # K로부터의 거리
 dist[K] = 0
-queue = list()  # min-heap
-queue.append([dist[K], K])  # (weight, vertex), weight 기준 정렬
+queue = list()
+queue.append([dist[K], K])  # K까지의 거리, 정점 이름 (min-heap)
 while queue:
     u = heapq.heappop(queue)[1]
-    for v, w in G[u]:  # u의 모든 인접 정점 relax
+    for v, w in G[u]:  # u의 모든 인접 정점에 대해서, 해당 정점에서 u를 거쳐서 K까지 갈 때의 거리를 relax
         if dist[v] > dist[u] + w:
             dist[v] = dist[u] + w
-            heapq.heappush(queue, [dist[v], v])
+            heapq.heappush(queue, [dist[v], v]) # 이미 relax한 정점 queue에 넣음
     # print(queue)
 for i in range(1, V+1):
     if dist[i] == float('inf'):
