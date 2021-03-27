@@ -29,11 +29,8 @@ for _ in range(T):
     while queue:
         now = queue.popleft()
         for c in tree[now]:
-            print(now, c)
             indegree[c] -= 1
             DP[c] = max(DP[now] + D[c], DP[c])
-            print(DP[c])
             if indegree[c] == 0:
                 queue.append(c)
     print(DP[dest])
-    print(DP)
