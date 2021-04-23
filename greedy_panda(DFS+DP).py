@@ -19,7 +19,7 @@ def dfs(i, j):
         if 0 <= new_i < N and 0 <= new_j < N:
             if G[i][j] < G[new_i][new_j]:
                 # 이미 방문했던 곳 찾을 때까지 dfs하다가 찾으면 하나씩 거슬러오면서 1씩 더해줌
-                DAYS[i][j] = max(1, dfs(new_i, new_j)+1)
+                DAYS[i][j] = max(DAYS[i][j], dfs(new_i, new_j)+1)
     return DAYS[i][j]
 
 input = sys.stdin.readline
